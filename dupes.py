@@ -52,7 +52,7 @@ def locate_ip(task):
             for ip in ip_key:
                 ip_addr = ip_key[ip]["ip"]
                 if ip_addr in targets:
-                    rprint(f"[blue]{task.host} {intf} - {ip_addr}[/blue]")
+                    rprint(f"[yellow]{task.host} {intf} - {ip_addr}[/yellow]")
         except KeyError:
             pass
 
